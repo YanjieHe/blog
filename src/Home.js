@@ -1,7 +1,6 @@
 import React from 'react'
-import {Jumbotron, Container} from 'react-bootstrap'
-import {Badge} from 'react-bootstrap'
 import Posts from './Posts.js'
+import './Home.css'
 import {withRouter} from "react-router-dom";
 
 class Home extends React.Component {
@@ -12,27 +11,25 @@ class Home extends React.Component {
     }
 
     renderBlog(path, title, date, summary) {
-        return <Container>
+        return <div className="container">
             <h5><a onClick={
                 () => this.props.history.push(path)}> {title}</a>
-                <Badge style={{"float": "right"}}
-                       variant="info">{date}</Badge></h5>
+                <span className="badge badge-info" id="date-badge">{date}</span></h5>
             <hr/>
             <p>{summary}</p>
-        </Container>
+        </div>
     }
 
     render() {
         return <div>
-            <Jumbotron fluid>
-                <Container>
+            <div className="jumbotron">
+                <div className="container">
                     <h3>何燕杰的博客 (Yanjie He's Blog)</h3>
                     <p>
                         Good things come to those who keep moving forward.
                     </p>
-                </Container>
-
-            </Jumbotron>
+                </div>
+            </div>
             {
                 Posts.map(
                     post =>
