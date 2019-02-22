@@ -15,7 +15,8 @@ ReactDOM.render(
             <Route path="/" exact component={Home}></Route>
             {
                 Posts.map(post =>
-                    <Route path={post.path} exact component={() => <Blog source={post.source}/>}></Route>
+                    <Route path={post.path} exact
+                           component={() => <Blog title={post.title} date={post.date} source={post.source}/>}></Route>
                 )
             }
         </Switch>
