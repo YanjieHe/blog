@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "0d49fa5e61393d838af6",
-    "url": "/blog/static/css/main.b7937f8f.chunk.css"
+    "revision": "bec74effb1532b488dd2",
+    "url": "/blog/static/css/main.f005ce20.chunk.css"
   },
   {
-    "revision": "0d49fa5e61393d838af6",
-    "url": "/blog/static/js/main.0d49fa5e.chunk.js"
+    "revision": "bec74effb1532b488dd2",
+    "url": "/blog/static/js/main.bec74eff.chunk.js"
   },
   {
     "revision": "bcecdc30670b92c225a7",
     "url": "/blog/static/js/runtime~main.bcecdc30.js"
   },
   {
-    "revision": "9b393f2c1ded7fe4fa30",
-    "url": "/blog/static/js/2.9b393f2c.chunk.js"
+    "revision": "bc9775d357015409260c",
+    "url": "/blog/static/js/2.bc9775d3.chunk.js"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/blog/static/media/Landscape-Image-Clustering.b47dfe32.md"
   },
   {
-    "revision": "924997ae6ce710f87627e3f657355021",
+    "revision": "3ccabaf9e0a49a17d0f1ae93b6544e0e",
     "url": "/blog/index.html"
   }
 ];
