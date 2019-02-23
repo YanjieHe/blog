@@ -2,22 +2,22 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yanjiehe.github.io/blog/",
+  "homepage": "https://yanjiehe.github.io/blog",
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-markdown": "^4.0.6",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "typescript": "^3.3.3333"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "python3 posts-to-json.py && react-scripts build",
     "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
