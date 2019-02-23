@@ -14,7 +14,7 @@ ReactDOM.render(
             <Route path="/blog/" exact component={Home}/>
             {
                 Posts.map(post =>
-                    <Route path={"/blog/" + post.path} exact
+                    <Route path={"/blog" + post.path} exact
                            component={() => <Blog title={post.title} date={post.date} content={post.content}/>}/>
                 )
             }
