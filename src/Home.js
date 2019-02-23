@@ -12,16 +12,14 @@ class Home extends React.Component {
     }
 
     renderBlog(path, title, date, summary) {
-        return <div className="container">
-            <div className="shadow p-3 mb-5 bg-white rounded">
-                <h5>
+        return <div className="shadow p-3 mb-5 bg-white rounded" style={{"width": "100%"}}>
+            <h5>
                 <span onClick={() => this.props.history.push("/blog" + path)}>
                     {title}
                 </span>
-                    <span className="badge badge-info" id="date-badge">{date}</span></h5>
-                <hr/>
-                <p>{summary}</p>
-            </div>
+                <span className="badge badge-info" id="date-badge">{date}</span></h5>
+            <hr/>
+            <p>{summary}</p>
         </div>
     }
 
