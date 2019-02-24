@@ -1,8 +1,9 @@
 import React from 'react'
-import Markdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown'
 import './Blog.css'
 import NavBar from "./NavBar.js";
 import Settings from './Settings.js'
+
 
 class Blog extends React.Component {
     constructor(props) {
@@ -16,7 +17,7 @@ class Blog extends React.Component {
     }
 
     componentDidMount() {
-        var url = Settings.blogPrefix + this.state.fileName
+        const url = Settings.blogPrefix + this.state.fileName
         fetch(url)
             .then(response => response.text())
             .then(
@@ -30,8 +31,8 @@ class Blog extends React.Component {
             <div className="shadow p-3 mb-5 bg-white rounded">
                 <h3 className="mt-4">{this.state.title}</h3>
                 <p align="right">Posted on {this.state.date}</p>
-                <Markdown source={this.state.markdown}
-                          escapeHtml={false}/>
+                <ReactMarkdown source={this.state.markdown}
+                               escapeHtml={false}/>
             </div>
         </div>
     }

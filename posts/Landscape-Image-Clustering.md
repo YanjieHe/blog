@@ -1,4 +1,4 @@
-My original thought about this project is to cluster the landscape images by their colors. I developed a web crawler to download 8892 landscape photos from <a href="https://wallpaper.mob.org/gallery/tag=landscape/">mob.org</a>.
+My original thought about this project is to cluster the landscape images by their colors. I developed a web crawler to download 8892 landscape photos from [mob.org](https://wallpaper.mob.org/gallery/tag=landscape/).
 
 However, I ran up against difficulty in extracting the color features from the images. I was inspired by an assignment given by Professor Harvey. In the assignment, the material guides us to use the proportional of the channel to classify whether a certain picture depicts summer or winter. From this perspective, I searched some information online and was attracted by the concept of color histogram.
 
