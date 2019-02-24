@@ -2,15 +2,26 @@ import React from 'react'
 import Markdown from 'react-markdown'
 import './Blog.css'
 import NavBar from "./NavBar.js";
+import Settings from './Settings.js'
 
 class Blog extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            markdown: props.content,
-            title: props.title,
-            date: props.date
+            markdown: "",
+            title: props.post.title,
+            date: props.post.date,
+            fileName: props.post.fileName
         }
+    }
+
+    componentDidMount() {
+        var url = Settings.blogPrefix + this.state.fileName
+        fetch(url)
+            .then(response => response.text())
+            .then(
+                text => this.setState({markdown: text})
+            )
     }
 
     render() {

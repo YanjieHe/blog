@@ -10,17 +10,16 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Blog from './Blog.js'
 import Posts from './Posts.js'
 import Categories from "./Categories.js";
+import Settings from './Settings.js'
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/blog/" exact component={Home}/>
-            <Route path="/blog/categories/" exact component={Categories}/>
+            <Route key="/" path={Settings.home} exact component={Home}/>
+            <Route key="/categories" path={Settings.home + "/categories"} exact component={Categories}/>
             {
-                Posts.map(post =>
-                    <Route path={"/blog" + post.path} exact
-                           component={() => <Blog title={post.title} date={post.date} content={post.content}/>}/>
-                )
+                Posts.map(post => <Route key={post.path} path={Settings.home + post.path} exact
+                                         component={() => <Blog post={post}/>}/>)
             }
         </Switch>
     </BrowserRouter>, document.getElementById('root'));

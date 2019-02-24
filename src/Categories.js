@@ -31,7 +31,7 @@ class Categories extends React.Component {
         return <div>
             <NavBar currentPage="Categories"/>
             <div className="row">
-                <div className="col-xs-10 col-sm-3" style={{"padding-bottom":"50px"}}>
+                <div className="col-xs-10 col-sm-3" style={{"padding-bottom": "50px"}}>
                     <ul className="list-group">
                         {this.renderOneCategory("C++", 90)}
                         {this.renderOneCategory("Arts", 30)}
