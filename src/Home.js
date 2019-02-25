@@ -8,7 +8,7 @@ class Home extends React.Component {
     render() {
         return <div>
             <NavBar currentPage="Home"/>
-            {Posts.map(post => <BlogInfo post={post}/>)}
+            {Posts.map(post => <BlogInfo key={post.path} post={post}/>)}
         </div>
     }
 }

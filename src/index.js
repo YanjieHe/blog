@@ -10,13 +10,14 @@ import {HashRouter, Route, Switch} from 'react-router-dom'
 import Blog from './Blog.js'
 import Posts from './Posts.js'
 import Categories from "./Categories.js";
-import Settings from './Settings.js'
+import Tags from './Tags.js'
 
 ReactDOM.render(
     <HashRouter>
         <Switch>
             <Route key="/" path={"/"} exact component={Home}/>
             <Route key="/categories" path={"/categories"} exact component={Categories}/>
+            <Route key="/tags" path={"/tags"} exact component={Tags}/>
             {
                 Posts.map(post => <Route key={post.path} path={post.path} exact
                                          component={() => <Blog post={post}/>}/>)

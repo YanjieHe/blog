@@ -1,5 +1,4 @@
 import React from 'react'
-import Settings from './Settings.js'
 import {createHashHistory} from 'history'
 
 class NavBar extends React.Component {

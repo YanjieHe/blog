@@ -28,7 +28,7 @@ class Categories extends React.Component {
 
 
     renderOneCategory(category, numOfPosts) {
-        return <li className="list-group-item d-flex justify-content-between align-items-center"
+        return <li key={category} className="list-group-item d-flex justify-content-between align-items-center"
                    onClick={
                        () => this.setState({category: category})
                    }>
@@ -41,7 +41,7 @@ class Categories extends React.Component {
         return <div>
             <NavBar currentPage="Categories"/>
             <div className="row">
-                <div className="col-xs-10 col-sm-3" style={{"padding-bottom": "50px"}}>
+                <div className="col-xs-10 col-sm-3" style={{"paddingBottom": "50px"}}>
                     <ul className="list-group">
                         {Object.keys(this.state.categories)
                             .map(category =>
@@ -51,9 +51,9 @@ class Categories extends React.Component {
                 <div className="col-xs-10 col-sm-7">
                     {Posts.map(post => {
                         if (this.state.category === "") {
-                            return <BlogInfo post={post}/>
+                            return <BlogInfo key={post.path} post={post}/>
                         } else if (this.state.category === post.category) {
-                            return <BlogInfo post={post}/>
+                            return <BlogInfo key={post.path} post={post}/>
                         } else {
                             return <span></span>
                         }
