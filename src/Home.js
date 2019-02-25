@@ -5,11 +5,6 @@ import NavBar from './NavBar.js'
 import BlogInfo from './BlogInfo.js'
 
 class Home extends React.Component {
-
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return <div>
             <NavBar currentPage="Home"/>
