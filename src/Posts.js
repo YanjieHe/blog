@@ -4,8 +4,8 @@ const Posts = [
         "fileName": "A-Content-based-Movie-Recommender-System.md",
         "title": "A Content-based Movie Recommender System",
         "date": "December 24, 2018",
-        "category": "Python|React.js|Recommender System|Image Processing|Audio Processing|Social Network Analysis",
-        "tags": "Computer Science|Clustering",
+        "category": "Recommender System",
+        "tags": "Python|React.js|Recommender System|Image Processing|Audio Processing|Social Network Analysis",
         "summary": "I built a content-based movie recommender system. The system only utilizing the content of movies themselves, which solves the cold-start problem. The challenge is how to extract meaningful information from the movies? "
     },
     {
