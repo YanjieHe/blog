@@ -48,7 +48,7 @@ class Categories extends React.Component {
                                 this.renderOneCategory(category, this.state.categories[category]))}
                     </ul>
                 </div>
-                <div className="col-xs-10 col-sm-7">
+                <div className="col-xs-10 col-sm-9">
                     {Posts.map(post => {
                         if (this.state.category === "") {
                             return <BlogInfo key={post.path} post={post}/>

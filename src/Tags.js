@@ -51,7 +51,7 @@ class Tags extends React.Component {
                                 this.renderOneTag(tag, this.state.tags[tag]))}
                     </ul>
                 </div>
-                <div className="col-xs-10 col-sm-7">
+                <div className="col-xs-10 col-sm-9">
                     {Posts.map(post => {
                         if (this.state.tag === "") {
                             return <BlogInfo key={post.path} post={post}/>

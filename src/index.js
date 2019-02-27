@@ -11,6 +11,7 @@ import Blog from './Blog.js'
 import Posts from './Posts.js'
 import Categories from "./Categories.js";
 import Tags from './Tags.js'
+import About from './About.js'
 
 ReactDOM.render(
     <HashRouter>
@@ -18,6 +19,7 @@ ReactDOM.render(
             <Route key="/" path={"/"} exact component={Home}/>
             <Route key="/categories" path={"/categories"} exact component={Categories}/>
             <Route key="/tags" path={"/tags"} exact component={Tags}/>
+            <Route key="/about" path={"/about"} exact component={About}/>
             {
                 Posts.map(post => <Route key={post.path} path={post.path} exact
                                          component={() => <Blog post={post}/>}/>)
