@@ -19,25 +19,45 @@ function collectTags() {
     return tags
 }
 
+function makeTagList(tags) {
+    var tagList = {}
+    var keys = Object.keys(tags)
+    for (var i = 0; i < keys.length; i++) {
+        var tag = keys[i]
+        tagList[tag] = false
+    }
+    return tagList
+}
+
 class Tags extends React.Component {
     constructor(props) {
         super(props);
         this.renderOneTag = this.renderOneTag.bind(this)
+        this.handleInputChange = this.handleInputChange.bind(this)
         this.state = {
             tags: collectTags(),
+            tagList: makeTagList(collectTags()),
             tag: ""
         }
     }
 
+    handleInputChange(event, tag) {
+        const tagList = this.state.tagList
+        tagList[tag] = event.target.checked
+        this.setState({tagList: tagList});
+    }
+
 
     renderOneTag(tag, numOfPosts) {
-        return <li key={tag} className="list-group-item d-flex justify-content-between align-items-center"
-                   onClick={
-                       () => this.setState({tag: tag})
-                   }>
-            {tag}
-            <span className="badge badge-primary badge-pill">{numOfPosts}</span>
-        </li>
+        return <div className="custom-control custom-checkbox" key={tag}>
+            <input type="checkbox"
+                   className="custom-control-input"
+                   id={tag}
+                   checked={this.state.tagList[tag]}
+                   key={tag}
+                   onChange={(event) => this.handleInputChange(event, tag)}/>
+            <label className="custom-control-label" htmlFor={tag}>{tag} </label>
+        </div>
     }
 
     render() {
@@ -45,21 +65,21 @@ class Tags extends React.Component {
             <NavBar currentPage="Tags"/>
             <div className="row">
                 <div className="col-xs-10 col-sm-3" style={{"paddingBottom": "50px"}}>
-                    <ul className="list-group">
+                    <div className="form-group">
                         {Object.keys(this.state.tags)
                             .map(tag =>
                                 this.renderOneTag(tag, this.state.tags[tag]))}
-                    </ul>
+                    </div>
                 </div>
                 <div className="col-xs-10 col-sm-9">
                     {Posts.map(post => {
-                        if (this.state.tag === "") {
-                            return <BlogInfo key={post.path} post={post}/>
-                        } else if (post.tags.split("|").indexOf(this.state.tag) >= 0) {
-                            return <BlogInfo key={post.path} post={post}/>
-                        } else {
-                            return <span></span>
+                        var items = post.tags.split('|')
+                        for (var i = 0; i < items.length; i++) {
+                            if (this.state.tagList[items[i]]) {
+                                return <BlogInfo key={post.path} post={post}/>
+                            }
                         }
+                        return <span key={post.path}></span>
                     })}
                 </div>
             </div>

@@ -28,12 +28,19 @@ class Categories extends React.Component {
 
 
     renderOneCategory(category, numOfPosts) {
-        return <li key={category} className="list-group-item d-flex justify-content-between align-items-center"
+        return <li key={category} className={
+            category === this.state.category
+                ? "list-group-item d-flex justify-content-between align-items-center active"
+                : "list-group-item d-flex justify-content-between align-items-center"
+        }
                    onClick={
                        () => this.setState({category: category})
                    }>
             {category}
-            <span className="badge badge-primary badge-pill">{numOfPosts}</span>
+            <span className={
+                category === this.state.category
+                    ? "badge badge-light badge-pill"
+                    : "badge badge-primary badge-pill"}>{numOfPosts}</span>
         </li>
     }
 
