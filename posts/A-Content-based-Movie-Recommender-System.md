@@ -42,11 +42,11 @@ A image can also be quantized in another color space, which is HSV (Hue, Saturat
 
 Whichever way we represent it, we can collect statistics from the images. Usually, one second of video is consist of 18 or 24 frames, depending on the fps(frame per second) of the video. Generally, there won't be significant change in frames in a second. Therefore, I sample frames from the videos, one frame for each second.
 
-
 After collectin the frames, I plotted the color histogram of the frames. In further analysis, I divided the histogram into four bins. The data in color histograms can be used as features for the recommender system.
 
 <img src = "./figures/A-Content-based-Movie-Recommender-System/hsv_histogram.png" width="1200" height="675" alt = "Joker">
-<h3> Audio Processing </h3>
+
+### Audio Processing
 
 What about sound? How can we take sound of the trailers into account. Well, according to a blog, I figured out that sound features can be capatured by dividing different amplitude into various levels.
 
