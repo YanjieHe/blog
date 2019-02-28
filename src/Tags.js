@@ -2,11 +2,12 @@ import React from 'react'
 import NavBar from "./NavBar.js";
 import Posts from "./Posts.js";
 import BlogInfo from './BlogInfo.js'
+import {createHashHistory} from 'history'
 
 function collectTags() {
     var tags = {}
     for (var i = 0; i < Posts.length; i++) {
-        var items = Posts[i].tags.split("|")
+        var items = Posts[i].tags
         for (var j = 0; j < items.length; j++) {
             var tag = items[j]
             if (tag in tags) {
@@ -47,7 +48,6 @@ class Tags extends React.Component {
         this.setState({tagList: tagList});
     }
 
-
     renderOneTag(tag, numOfPosts) {
         return <div className="custom-control custom-checkbox" key={tag}>
             <input type="checkbox"
@@ -73,7 +73,7 @@ class Tags extends React.Component {
                 </div>
                 <div className="col-xs-10 col-sm-9">
                     {Posts.map(post => {
-                        var items = post.tags.split('|')
+                        var items = post.tags
                         for (var i = 0; i < items.length; i++) {
                             if (this.state.tagList[items[i]]) {
                                 return <BlogInfo key={post.path} post={post}/>

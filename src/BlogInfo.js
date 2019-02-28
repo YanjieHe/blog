@@ -1,4 +1,5 @@
 import React from 'react'
+import {IoIosPricetag} from 'react-icons/io'
 import {createHashHistory} from 'history'
 
 class BlogInfo extends React.Component {
@@ -8,7 +9,8 @@ class BlogInfo extends React.Component {
             path: props.post.path,
             title: props.post.title,
             date: props.post.date,
-            summary: props.post.summary
+            summary: props.post.summary,
+            tags: props.post.tags
         }
     }
 
@@ -21,6 +23,7 @@ class BlogInfo extends React.Component {
                 <span className="badge badge-info" id="date-badge">{this.state.date}</span></h5>
             <hr/>
             <p>{this.state.summary}</p>
+            <p>{this.state.tags.map(tag => <small><IoIosPricetag/>{tag}&nbsp;&nbsp;</small>)}                </p>
         </div>
     }
 }
