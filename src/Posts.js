@@ -5,7 +5,7 @@ const Posts = [
         "title": "A Content-based Movie Recommender System",
         "date": "December 24, 2018",
         "category": "Recommender System",
-        "tags": ["Python", "React.js", "Recommender System", "Image Processing", "Audio Processing", "Social Network Analysis"],
+        "tags": ["Recommender System", "Image Processing", "Audio Processing", "Social Network Analysis"],
         "summary": "I built a content-based movie recommender system. The system only utilizing the content of movies themselves, which solves the cold-start problem. The challenge is how to extract meaningful information from the movies? "
     },
     {
@@ -23,7 +23,7 @@ const Posts = [
         "title": "Text Co-occurrence Network Analysis for The Hunger Games",
         "date": "September 08, 2018",
         "category": "Natural Language Processing",
-        "tags": ["Natural Language Processing", "Social Network Analysis", "Gephi"],
+        "tags": ["Natural Language Processing", "Social Network Analysis"],
         "summary": "I am a fan of The Hunger Games, and I have read all the three books. The story of The Hunger Games is narrated by the young girl, Katniss Everdeen. There are many characters in the story, and what I am going to do is to describe the connections between the characters from a data science perspective."
     }
 ];
