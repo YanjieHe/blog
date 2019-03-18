@@ -2,6 +2,8 @@ import React from 'react'
 import NavBar from './NavBar.js'
 import Posts from "./Posts";
 import BlogInfo from './BlogInfo.js'
+import './Categories.css'
+import './MousePointer.css'
 
 function collectCategories() {
     var categories = {}
@@ -30,8 +32,8 @@ class Categories extends React.Component {
     renderOneCategory(category, numOfPosts) {
         return <li key={category} className={
             category === this.state.category
-                ? "list-group-item d-flex justify-content-between align-items-center active"
-                : "list-group-item d-flex justify-content-between align-items-center"
+                ? "pointer list-group-item d-flex justify-content-between align-items-center active"
+                : "pointer list-group-item d-flex justify-content-between align-items-center"
         }
                    onClick={
                        () => this.setState({category: category})
