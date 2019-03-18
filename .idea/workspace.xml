@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8914c033-7e46-475a-9dc0-3ecb593d2345" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BlogInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Categories.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MousePointer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlogInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlogInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tags.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootstrap.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Categories.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="176">
+              <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -73,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+            <state relative-caret-position="208">
+              <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -88,23 +82,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50624">
-              <caret line="3164" column="1" selection-start-line="3164" selection-start-column="1" selection-end-line="3164" selection-end-column="1" />
+            <state relative-caret-position="312">
+              <caret line="10550" lean-forward="true" selection-start-line="10550" selection-end-line="10550" />
               <folding>
-                <element signature="e#42546#42780#2" expanded="true" />
-                <element signature="e#43760#43910#1" expanded="true" />
-                <element signature="e#43949#44183#1" expanded="true" />
-                <element signature="e#47805#48081#2" expanded="true" />
-                <element signature="e#49089#49239#1" expanded="true" />
-                <element signature="e#49278#49554#1" expanded="true" />
-                <element signature="e#88923#89110#2" expanded="true" />
-                <element signature="e#89371#89507#2" expanded="true" />
-                <element signature="e#89972#90105#2" expanded="true" />
-                <element signature="e#92111#92261#1" expanded="true" />
-                <element signature="e#111228#111458#2" expanded="true" />
-                <element signature="e#112466#112702#2" expanded="true" />
-                <element signature="e#153999#154176#2" expanded="true" />
-                <element signature="e#154233#154410#2" expanded="true" />
+                <element signature="e#42483#42717#2" expanded="true" />
+                <element signature="e#43700#43850#1" expanded="true" />
+                <element signature="e#43892#44126#1" expanded="true" />
+                <element signature="e#47751#48027#2" expanded="true" />
+                <element signature="e#49038#49188#1" expanded="true" />
+                <element signature="e#49230#49506#1" expanded="true" />
+                <element signature="e#89030#89217#2" expanded="true" />
+                <element signature="e#89478#89614#2" expanded="true" />
+                <element signature="e#90075#90208#2" expanded="true" />
+                <element signature="e#92219#92369#1" expanded="true" />
+                <element signature="e#111427#111657#2" expanded="true" />
+                <element signature="e#112693#112929#2" expanded="true" />
+                <element signature="e#154219#154396#2" expanded="true" />
+                <element signature="e#154453#154630#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,14 +142,14 @@
         <option value="$PROJECT_DIR$/src/Blog.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/About.js" />
-        <option value="$PROJECT_DIR$/src/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/Categories.css" />
         <option value="$PROJECT_DIR$/src/BlogInfo.css" />
         <option value="$PROJECT_DIR$/src/Tags.css" />
         <option value="$PROJECT_DIR$/src/Tags.js" />
-        <option value="$PROJECT_DIR$/src/NavBar.js" />
         <option value="$PROJECT_DIR$/src/BlogInfo.js" />
         <option value="$PROJECT_DIR$/src/Categories.js" />
+        <option value="$PROJECT_DIR$/src/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/NavBar.js" />
       </list>
     </option>
   </component>
@@ -249,12 +243,12 @@
       <workItem from="1550791150285" duration="258000" />
       <workItem from="1550966153756" duration="34880000" />
       <workItem from="1551741704388" duration="7137000" />
-      <workItem from="1552947820798" duration="1201000" />
+      <workItem from="1552947820798" duration="2091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82731000" />
+    <option name="totallyTimeSpent" value="83621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="723" extended-state="6" />
@@ -429,29 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50624">
-          <caret line="3164" column="1" selection-start-line="3164" selection-start-column="1" selection-end-line="3164" selection-end-column="1" />
-          <folding>
-            <element signature="e#42546#42780#2" expanded="true" />
-            <element signature="e#43760#43910#1" expanded="true" />
-            <element signature="e#43949#44183#1" expanded="true" />
-            <element signature="e#47805#48081#2" expanded="true" />
-            <element signature="e#49089#49239#1" expanded="true" />
-            <element signature="e#49278#49554#1" expanded="true" />
-            <element signature="e#88923#89110#2" expanded="true" />
-            <element signature="e#89371#89507#2" expanded="true" />
-            <element signature="e#89972#90105#2" expanded="true" />
-            <element signature="e#92111#92261#1" expanded="true" />
-            <element signature="e#111228#111458#2" expanded="true" />
-            <element signature="e#112466#112702#2" expanded="true" />
-            <element signature="e#153999#154176#2" expanded="true" />
-            <element signature="e#154233#154410#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tags.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -463,16 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -488,8 +449,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Categories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="176">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="10550" lean-forward="true" selection-start-line="10550" selection-end-line="10550" />
+          <folding>
+            <element signature="e#42483#42717#2" expanded="true" />
+            <element signature="e#43700#43850#1" expanded="true" />
+            <element signature="e#43892#44126#1" expanded="true" />
+            <element signature="e#47751#48027#2" expanded="true" />
+            <element signature="e#49038#49188#1" expanded="true" />
+            <element signature="e#49230#49506#1" expanded="true" />
+            <element signature="e#89030#89217#2" expanded="true" />
+            <element signature="e#89478#89614#2" expanded="true" />
+            <element signature="e#90075#90208#2" expanded="true" />
+            <element signature="e#92219#92369#1" expanded="true" />
+            <element signature="e#111427#111657#2" expanded="true" />
+            <element signature="e#112693#112929#2" expanded="true" />
+            <element signature="e#154219#154396#2" expanded="true" />
+            <element signature="e#154453#154630#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
