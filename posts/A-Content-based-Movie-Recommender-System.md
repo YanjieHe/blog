@@ -1,12 +1,12 @@
-### Introduction
+# Introduction
 
 I built a content-based movie recommender system. The system only utilizing the content of movies themselves, which solves the cold-start problem. The challenge is how to extract meaningful information from the movies?
 
-### Movie Trailers
+# Movie Trailers
 
 Movie trailers are epitomes of movies. From a movie trailer, audience can have a general idea of the style of the movie. For example, a criminal movie usually have dim colors, while a comedy are full of laughters. How can we quantify them?
 
-### Image Processing
+# Image Processing
 
 Below is a screenshot of one my favourite movie <em>The Dark Knight</em>'s trailer. As is know to all who familiar with video processing, a video is consist of numerous frames, and each frame is an image. An colorful image is a matrix, each cell of which is a color, representing as RGB.
 
@@ -46,7 +46,7 @@ After collectin the frames, I plotted the color histogram of the frames. In furt
 
 <img src = "./figures/A-Content-based-Movie-Recommender-System/hsv_histogram.png" width="1200" height="675" alt = "Joker">
 
-### Audio Processing
+# Audio Processing
 
 What about sound? How can we take sound of the trailers into account. Well, according to a blog, I figured out that sound features can be capatured by dividing different amplitude into various levels.
 
@@ -54,7 +54,7 @@ What about sound? How can we take sound of the trailers into account. Well, acco
             
 The audio information of trailers can be used identify the feelings people have when watching them. There must have some difference in the sound between a movie which is filled with gun shootings and one with romantic background music.
             
-### Social Network Analysis
+# Social Network Analysis
             
 If two movies have overlapping in crew members, then I defined them have a connection to each other. Let's take two Christopher Nolan's movies as examples.
             
