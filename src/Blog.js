@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import marked from 'react-marked'
 import './Blog.css'
 import NavBar from "./NavBar.js";
 import Settings from './Settings.js'
@@ -31,8 +31,9 @@ class Blog extends React.Component {
             <div className="shadow p-3 mb-5 bg-white rounded">
                 <h3 className="mt-4">{this.state.title}</h3>
                 <p align="right">Posted on {this.state.date}</p>
-                <ReactMarkdown source={this.state.markdown}
-                               escapeHtml={false}/>
+                <div dangerouslySetInnerHTML={{__html: marked(this.state.markdown, {sanitize: true})}}/>
+                {/*<ReactMarkdown source={this.state.markdown}*/}
+                {/*escapeHtml={false}/>*/}
             </div>
         </div>
     }
