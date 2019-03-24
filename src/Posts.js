@@ -1,7 +1,7 @@
 const Posts = [
     {
         "path": "/a-content-based-movie-recommender-system",
-        "fileName": "A-Content-based-Movie-Recommender-System.md",
+        "fileName": "A-Content-based-Movie-Recommender-System.html",
         "title": "A Content-based Movie Recommender System",
         "date": "December 24, 2018",
         "category": "Recommender System",
@@ -10,7 +10,7 @@ const Posts = [
     },
     {
         "path": "/landscape-image-clustering",
-        "fileName": "Landscape-Image-Clustering.md",
+        "fileName": "Landscape-Image-Clustering.html",
         "title": "Landscape Image Clustering based on Color Histogram",
         "date": "September 16, 2018",
         "category": "Image Processing",
@@ -19,7 +19,7 @@ const Posts = [
     },
     {
         "path": "/text-co-occurrence-network",
-        "fileName": "Text-Co-occurrence-Network.md",
+        "fileName": "Text-Co-occurrence-Network.html",
         "title": "Text Co-occurrence Network Analysis for The Hunger Games",
         "date": "September 08, 2018",
         "category": "Natural Language Processing",
