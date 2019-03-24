@@ -3,31 +3,7 @@ import NavBar from "./NavBar.js";
 import Posts from "./Posts.js";
 import BlogInfo from './BlogInfo.js'
 import './MousePointer.css';
-function collectTags() {
-    var tags = {}
-    for (var i = 0; i < Posts.length; i++) {
-        var items = Posts[i].tags
-        for (var j = 0; j < items.length; j++) {
-            var tag = items[j]
-            if (tag in tags) {
-                tags[tag] += 1
-            } else {
-                tags[tag] = 1
-            }
-        }
-    }
-    return tags
-}
 
-function makeTagList(tags) {
-    var tagList = {}
-    var keys = Object.keys(tags)
-    for (var i = 0; i < keys.length; i++) {
-        var tag = keys[i]
-        tagList[tag] = false
-    }
-    return tagList
-}
 
 class Tags extends React.Component {
     constructor(props) {
@@ -36,10 +12,36 @@ class Tags extends React.Component {
         this.handleInputChange = this.handleInputChange.bind(this)
         this.renderPosts = this.renderPosts.bind(this);
         this.state = {
-            tags: collectTags(),
-            tagList: makeTagList(collectTags()),
+            tags: Tags.collectTags(),
+            tagList: Tags.makeTagList(Tags.collectTags()),
             tag: ""
         }
+    }
+
+    static collectTags() {
+        let tags = {};
+        for (let i = 0; i < Posts.length; i++) {
+            let items = Posts[i].tags;
+            for (let j = 0; j < items.length; j++) {
+                let tag = items[j];
+                if (tag in tags) {
+                    tags[tag] += 1
+                } else {
+                    tags[tag] = 1
+                }
+            }
+        }
+        return tags;
+    }
+
+    static makeTagList(tags) {
+        let tagList = {};
+        let keys = Object.keys(tags);
+        for (let i = 0; i < keys.length; i++) {
+            let tag = keys[i];
+            tagList[tag] = false;
+        }
+        return tagList;
     }
 
     handleInputChange(tag) {
@@ -50,7 +52,7 @@ class Tags extends React.Component {
 
     renderOneTag(tag, numOfPosts) {
         return <span className="pointer" key={tag}><span
-            className={this.state.tagList[tag] ? "badge badge-pill badge-success" : "badge badge-pill badge-light"}
+            className={this.state.tagList[tag] ? "badge badge-pill badge-success" : "badge badge-pill badge-secondary"}
             key={tag}
             onClick={(event) => this.handleInputChange(tag)}>{tag}</span>&nbsp;&nbsp;</span>
     }

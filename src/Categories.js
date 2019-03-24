@@ -2,47 +2,39 @@ import React from 'react'
 import NavBar from './NavBar.js'
 import Posts from "./Posts";
 import BlogInfo from './BlogInfo.js'
-import './Categories.css'
 import './MousePointer.css'
 
-function collectCategories() {
-    var categories = {}
-    for (var i = 0; i < Posts.length; i++) {
-        var category = Posts[i].category
-        if (category in categories) {
-            categories[category] += 1
-        } else {
-            categories[category] = 1
-        }
-    }
-    return categories
-}
 
 class Categories extends React.Component {
     constructor(props) {
         super(props);
-        this.renderOneCategory = this.renderOneCategory.bind(this)
+        this.renderOneCategory = this.renderOneCategory.bind(this);
         this.state = {
-            categories: collectCategories(),
+            categories: Categories.collectCategories(),
             category: ""
         }
     }
 
+    static collectCategories() {
+        let categories = {};
+        for (let i = 0; i < Posts.length; i++) {
+            let category = Posts[i].category;
+            if (category in categories) {
+                categories[category] += 1
+            } else {
+                categories[category] = 1
+            }
+        }
+        return categories
+    }
 
     renderOneCategory(category, numOfPosts) {
-        return <li key={category} className={
-            category === this.state.category
-                ? "pointer list-group-item d-flex justify-content-between align-items-center active"
-                : "pointer list-group-item d-flex justify-content-between align-items-center"
-        }
-                   onClick={
-                       () => this.setState({category: category})
-                   }>
+        let activation = "pointer list-group-item d-flex justify-content-between align-items-center " +
+            (category === this.state.category ? "active" : "");
+        return <li key={category} className={activation}
+                   onClick={() => this.setState({category: category})}>
             {category}
-            <span className={
-                category === this.state.category
-                    ? "badge badge-light badge-pill"
-                    : "badge badge-primary badge-pill"}>{numOfPosts}</span>
+            <span className="badge badge-primary badge-pill">{numOfPosts}</span>
         </li>
     }
 
