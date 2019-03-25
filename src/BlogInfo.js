@@ -1,6 +1,6 @@
 import React from 'react'
 import {createHashHistory} from 'history'
-// import './BlogInfo.css'
+import './BlogInfo.css'
 import './MousePointer.css'
 
 class BlogInfo extends React.Component {
@@ -18,7 +18,7 @@ class BlogInfo extends React.Component {
 
     render() {
         let tagsInfo = this.state.tags.map(tag =>
-            <span key={tag}><span className="badge badge-pill badge-secondary"
+            <span id="tag" key={tag}><span className="badge badge-pill badge-secondary"
                                   key={tag}>{tag}</span>&nbsp;&nbsp;</span>
         );
         return <div className="shadow p-3 mb-5 bg-white rounded" style={{"width": "100%"}}>
@@ -28,7 +28,7 @@ class BlogInfo extends React.Component {
                 </span>
                 <span className="badge badge-info" id="date-badge">{this.state.date}</span></h5>
             <hr/>
-            <p onClick={() => createHashHistory().push(this.state.path)}>{this.state.summary}</p>
+            <p id="summary" onClick={() => createHashHistory().push(this.state.path)}>{this.state.summary}</p>
             <span>{tagsInfo}</span>
         </div>
     }

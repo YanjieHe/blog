@@ -51,7 +51,7 @@ class Tags extends React.Component {
     }
 
     renderOneTag(tag, numOfPosts) {
-        return <span className="pointer" key={tag}><span
+        return <span id="tag" className="pointer" key={tag}><span
             className={this.state.tagList[tag] ? "badge badge-pill badge-success" : "badge badge-pill badge-secondary"}
             key={tag}
             onClick={(event) => this.handleInputChange(tag)}>{tag}</span>&nbsp;&nbsp;</span>
